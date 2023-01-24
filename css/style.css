@@ -38,6 +38,10 @@
   font-style: normal;
 }
 
+footer .wrapper {
+  padding: 0 20px;
+}
+
 .partners {
   display: flex;
   justify-content: space-between;
@@ -367,6 +371,10 @@ main {
 }
 
 @media (min-width: 301px) and (max-width: 799px) {
+  footer .wrapper {
+    padding: 0;
+  }
+
   .partners {
     flex-direction: column;
   }
