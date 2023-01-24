@@ -46,7 +46,7 @@ footer .wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 25px 0 35px 0;
+  padding: 21px 0 35px 0;
   color: black;
   row-gap: 30px;
 }
@@ -61,10 +61,9 @@ footer .wrapper {
 
 .partners__box span {
   height: 30px;
-  font-size: 11px;
+  font-size: 9px;
   max-width: 140px;
   display: block;
-  margin-bottom: 40px;
 }
 
 .own-content .inner-wrapper {
@@ -86,22 +85,22 @@ footer .wrapper {
 }
 
 .own-content .left-block {
-  max-width: 220px;
+  max-width: 240px;
   position: relative;
   z-index: 2;
 }
 
 .own-content .logo {
-  padding-top: 30px;
+  padding-top: 35px;
 }
 
 .own-content .logo h3 {
   font-family: plumb;
   font-weight: 500;
-  line-height: 80%;
-  font-size: 14px;
+  font-size: 15px;
   max-width: 140px;
   position: relative;
+  line-height: 98%;
 }
 
 .own-content .logo h3:before {
@@ -117,36 +116,44 @@ footer .wrapper {
 
 .own-content .title span {
   display: block;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   font-family: plumb;
 }
 
 .own-content .title h1 {
+  line-height: 95%;
   font-weight: 900;
   font-family: plumb;
-  font-size: 120px;
+  font-size: 133px;
+  letter-spacing: -5px;
   position: relative;
-  left: -8px;
+  left: -7px;
 }
 
 .own-content .title h2 {
   font-weight: 900;
   font-family: plumb;
-  font-size: 39px;
+  font-size: 42px;
 }
 
 .own-content .date {
-  padding-top: 80px;
-  font-size: 32px;
+  padding-top: 75px;
+  font-size: 35px;
   margin: 0;
   font-weight: 500;
   font-family: plumb;
 }
 
+.own-content .date span {
+  color: #6BCEF5;
+  font-weight: 300;
+}
+
 .own-content .place {
-  font-size: 20px;
+  font-size: 21px;
   margin: 0;
+  margin-top: 5px;
   font-weight: 500;
   font-family: plumb;
 }
@@ -154,11 +161,12 @@ footer .wrapper {
 .own-content .right-block {
   max-width: 455px;
   flex: 1;
-  padding-top: 30px;
+  padding-top: 35px;
 }
 
 .own-content .right-block p {
   font-size: 12px;
+  line-height: 124%;
 }
 
 .own-content .right-block-head {
@@ -171,17 +179,17 @@ footer .wrapper {
   font-weight: 500;
   text-decoration: none;
   color: #53C7F4;
-  font-size: 12px;
+  font-size: 9px;
 }
 
 .own-content .text-content {
-  margin-top: 30px;
+  margin-top: 37px;
   font-size: 12px;
   text-align: justify;
 }
 
 .themes {
-  margin-top: 40px;
+  margin-top: 25px;
   font-family: Roboto;
   font-weight: 400;
   position: relative;
@@ -190,9 +198,9 @@ footer .wrapper {
 
 .themes__head {
   display: flex;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-  font-size: 18px;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+  font-size: 17.5px;
 }
 
 .themes__head span {
@@ -205,18 +213,17 @@ footer .wrapper {
 }
 
 .themes__box {
-  max-width: 760px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  row-gap: 40px;
-  -moz-column-gap: 50px;
-       column-gap: 50px;
-  margin-top: 30px;
+  row-gap: 35px;
+  -moz-column-gap: 45px;
+       column-gap: 45px;
+  margin-top: 25px;
 }
 
 .themes .theme {
   position: relative;
+  padding-left: 15px;
 }
 
 .themes .theme:before {
@@ -226,12 +233,12 @@ footer .wrapper {
   height: 9px;
   background-color: #E30613;
   border-radius: 50%;
-  left: -15px;
+  left: 0px;
   top: 5px;
 }
 
 .themes .col-1 {
-  max-width: 160px;
+  max-width: 152px;
 }
 
 .themes .col-2 {
@@ -247,7 +254,7 @@ footer .wrapper {
 }
 
 .contacts {
-  margin-top: 60px;
+  margin-top: 62px;
   padding-bottom: 30px;
   position: relative;
   z-index: 2;
@@ -259,7 +266,8 @@ footer .wrapper {
 
 .contacts__box {
   display: flex;
-  justify-content: space-between;
+  -moz-column-gap: 47px;
+       column-gap: 47px;
   flex-wrap: wrap;
   max-width: 660px;
 }
@@ -278,11 +286,11 @@ footer .wrapper {
 }
 
 .contacts .contact:nth-child(2)::before {
-  left: -40px;
+  left: -35px;
 }
 
 .contacts .contact:nth-child(2)::after {
-  right: -20px;
+  right: -15px;
   top: 0;
 }
 
@@ -292,12 +300,12 @@ footer .wrapper {
 
 .contacts p {
   max-width: 185px;
-  margin: 0 0 6px 0;
+  margin: 0 0 3px 0;
 }
 
 .contacts span {
   display: block;
-  margin-bottom: 2px;
+  margin-bottom: -1px;
 }
 
 .contacts a {
@@ -365,9 +373,8 @@ main {
 }
 
 .inner-wrapper {
-  max-width: 830px;
-  margin: auto;
-  padding: 0 100px;
+  max-width: 825px;
+  padding: 0 75px;
 }
 
 @media (min-width: 301px) and (max-width: 799px) {
@@ -430,13 +437,14 @@ main {
 
   .own-content .date {
     padding-top: 30px;
-    margin-top: 55px;
+    margin-top: 35px;
     font-size: 26px;
   }
 
   .own-content .place {
     padding-bottom: 30px;
     font-size: 18px;
+    margin: 0;
   }
 
   .own-content .right-block {
