@@ -59,7 +59,7 @@ footer .wrapper {
   color: black;
 }
 
-.partners__box span {
+.partners__box .partner-position {
   height: 30px;
   font-size: 9px;
   max-width: 140px;
@@ -114,7 +114,7 @@ footer .wrapper {
   padding-top: 35px;
 }
 
-.own-content .logo h3 {
+.own-content .logo .logo-name {
   font-family: plumb;
   font-weight: 500;
   font-size: 15px;
@@ -123,7 +123,7 @@ footer .wrapper {
   line-height: 98%;
 }
 
-.own-content .logo h3:before {
+.own-content .logo .logo-name:before {
   position: absolute;
   content: url(../img/logo.png);
   left: -50px;
@@ -134,14 +134,14 @@ footer .wrapper {
   text-transform: uppercase;
 }
 
-.own-content .title span {
+.own-content .title .title-top {
   display: block;
   font-size: 16px;
   font-weight: 500;
   font-family: plumb;
 }
 
-.own-content .title h1 {
+.own-content .title .title-main {
   line-height: 95%;
   font-weight: 900;
   font-family: plumb;
@@ -151,7 +151,7 @@ footer .wrapper {
   left: -7px;
 }
 
-.own-content .title h2 {
+.own-content .title .title-bottom {
   font-weight: 900;
   font-family: plumb;
   font-size: 42px;
@@ -185,8 +185,8 @@ footer .wrapper {
 }
 
 .own-content .right-block p {
-  font-size: 12px;
-  line-height: 124%;
+  font-size: 11.6px;
+  line-height: 134%;
 }
 
 .own-content .right-block-head {
@@ -195,7 +195,7 @@ footer .wrapper {
   align-items: flex-start;
 }
 
-.own-content .right-block-head a {
+.own-content .right-block-head .archive {
   font-weight: 500;
   text-decoration: none;
   color: #53C7F4;
@@ -204,7 +204,6 @@ footer .wrapper {
 
 .own-content .text-content {
   margin-top: 37px;
-  font-size: 12px;
   text-align: justify;
 }
 
@@ -223,11 +222,11 @@ footer .wrapper {
   font-size: 17.5px;
 }
 
-.themes__head span {
+.themes__head .theme-title {
   color: #E30613;
 }
 
-.themes__head a {
+.themes__head .download {
   text-decoration: none;
   color: #009FE3;
 }
@@ -290,6 +289,7 @@ footer .wrapper {
        column-gap: 47px;
   flex-wrap: wrap;
   max-width: 660px;
+  line-height: 100%;
 }
 
 .contacts .contact:nth-child(2) {
@@ -318,18 +318,18 @@ footer .wrapper {
   font-size: 12px;
 }
 
-.contacts p {
+.contacts .contact-question {
   max-width: 185px;
-  margin: 0 0 3px 0;
+  margin: 0;
+  line-height: 130%;
 }
 
-.contacts span {
+.contacts .contact-person {
   display: block;
   margin-bottom: -1px;
 }
 
 .contacts a {
-  margin: 2px 0;
   display: block;
   color: white;
   text-decoration: none;
@@ -432,16 +432,16 @@ main {
     padding-left: 80px;
   }
 
-  .own-content .title span {
+  .own-content .title .title-top {
     font-size: 12px;
   }
 
-  .own-content .title h1 {
+  .own-content .title .title-main {
     font-size: 97px;
     line-height: 85%;
   }
 
-  .own-content .title h2 {
+  .own-content .title .title-bottom {
     font-size: 31px;
   }
 
@@ -478,11 +478,11 @@ main {
     justify-content: center;
   }
 
-  .themes__head span {
+  .themes__head .theme-title {
     padding: 22px 0;
   }
 
-  .themes__head a {
+  .themes__head .download {
     display: none;
   }
 
