@@ -348,6 +348,63 @@ footer .wrapper {
   margin-top: 2px;
 }
 
+.popup {
+  position: fixed;
+  max-width: 600px;
+  width: 100%;
+  background: white;
+  z-index: 4;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.close-button::after,
+.close-button:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  background: black;
+}
+
+.close-button:before {
+  transform: rotate(45deg);
+}
+
+.close-button::after {
+  transform: rotate(-45deg);
+}
+
+.popup.active {
+  top: 50%;
+}
+
+.archive-list {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.archive-link {
+  color: #1b75bb;
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 400;
+}
+
 html {
   overflow-x: hidden;
 }
