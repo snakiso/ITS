@@ -10,7 +10,6 @@
     display: flex;
     justify-content: space-between;
     padding-top: 60px;
-    position: relative;
     z-index: 3;
   }
 
@@ -66,7 +65,7 @@
     font-size: 22px;
     transition: ease-in .2s;
 
-    &_active{
+    &_active {
       color: #878787;
       pointer-events: none;
     }
@@ -98,18 +97,40 @@ $breakpoints: (
 @include media (">xs-phone", "<xs-tablet") {
 
   .archive {
-    background-color: #E30613;
+
+    &__top {
+      background: #E30613;
+    }
+
+    &__wrapper {
+      padding: 0;
+    }
+
+    &__era {
+      padding-right: 20px;
+      position: absolute;
+      bottom: 40px;
+      left: 20px;
+    }
 
     &__logo {
       max-width: 160px;
       font-size: 15px;
       padding-top: 50px;
+      padding-left: 20px;
+      padding-bottom: 30px;
 
       &:before {
         width: 40px;
         height: 48px;
         top: 0px;
+        left: 20px;
       }
+    }
+
+    &__container {
+      padding: 0 20px;
+      padding-bottom: 100px;
     }
 
     &__box {
@@ -126,7 +147,12 @@ $breakpoints: (
     }
 
     &__item {
+      color: #00ABE3;
       font-size: 16px;
+
+      &_active {
+        color: #878787;
+      }
     }
   }
 
