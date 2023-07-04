@@ -506,6 +506,11 @@
   transition: ease-in 0.2s;
 }
 
+.archive__item_active {
+  color: #878787;
+  pointer-events: none;
+}
+
 .archive__item::before {
   position: absolute;
   content: "";

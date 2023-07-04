@@ -66,6 +66,11 @@
     font-size: 22px;
     transition: ease-in .2s;
 
+    &_active{
+      color: #878787;
+      pointer-events: none;
+    }
+
     &::before {
       position: absolute;
       content: '';
