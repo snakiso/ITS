@@ -1,0 +1,80 @@
+@import 'include-media';
+@import 'page';
+@import 'red-square';
+@import 'bottom-decor';
+@import 'right-decor';
+@import 'fonts';
+@import 'partners';
+@import 'own-content';
+@import 'themes';
+@import 'contacts';
+@import 'footer';
+@import 'archive';
+
+// * {
+//  box-sizing: border-box;
+// }
+
+html {
+  overflow-x: hidden;
+}
+
+
+.main {
+  position: relative;
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &_full-screen {
+    flex: 1 0 auto;
+  }
+}
+
+
+.wrapper {
+  max-width: 1024px;
+  margin: auto;
+  position: relative;
+  width: 100%;
+}
+
+.inner-wrapper {
+  max-width: 825px;
+  padding: 0 75px;
+}
+
+$breakpoints: (
+  xs-phone: 300px,
+  phone: 500px,
+  xs-tablet: 800px,
+  tablet: 1260px,
+  desktop: 1720px
+);
+
+
+
+@include media (">xs-phone", "<xs-tablet") {
+
+  .bottom-decor {
+    display: none;
+  }
+
+  .main {
+    background: none;
+
+    &_full-screen {
+      flex: 0;
+    }
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .inner-wrapper {
+    width: 100%;
+    padding: 0;
+  }
+}

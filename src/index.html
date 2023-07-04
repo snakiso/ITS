@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title": "Главная"
+})
+
+<body class="page">
+  <main class="main">
+    @@include('html/own-content.html',{})
+    @@include('html/themes.html',{})
+    @@include('html/contacts.html',{})
+    <div class="bottom-decor">
+      <img src="@img/dots_cutted.png" alt="">
+    </div>
+    <div class="right-decor">
+      <img src="@img/right.svg" alt="">
+    </div>
+  </main>
+  @@include('html/partners.html',{})
+  @@include('html/footer.html',{})
+</body>
+
+</html>

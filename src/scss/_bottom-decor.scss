@@ -1,0 +1,16 @@
+.bottom-decor {
+  position: absolute;
+  bottom: 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+$breakpoints: (
+  xs-phone: 300px,
+  phone: 500px,
+  xs-tablet: 800px,
+  tablet: 1260px,
+  desktop: 1720px
+);

@@ -1,0 +1,209 @@
+.own-content {
+
+  .inner-wrapper {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 130px;
+  }
+
+  .left-block {
+    max-width: 240px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .logo {
+    padding-top: 32px;
+
+    .logo-name {
+      font-family: plumb;
+      font-weight: 500;
+      font-size: 15px;
+      max-width: 140px;
+      position: relative;
+      line-height: 102%;
+      letter-spacing: 0.02em;
+    }
+
+    .logo-name:before {
+      position: absolute;
+      content: url(../img/logo.png);
+      left: -46px;
+    }
+  }
+
+  .title {
+    margin-top: 40px;
+
+    .title-top {
+      display: block;
+      font-size: 13px;
+      font-weight: 500;
+      font-family: plumb;
+    }
+
+    .title-main {
+      line-height: 110%;
+      font-weight: 900;
+      font-family: plumb;
+      font-size: 26px;
+      position: relative;
+      left: -2px;
+      text-transform: uppercase;
+      margin-top: 15px;
+      letter-spacing: -0.05em;
+    }
+
+    .title-bottom {
+      font-weight: 500;
+      font-family: plumb;
+      font-size: 24px;
+      margin-top: 19px;
+      text-transform: uppercase;
+    }
+  }
+
+  .date {
+    position: relative;
+    padding-top: 55px;
+    font-size: 35px;
+    margin: 0;
+    font-weight: 500;
+    font-family: plumb;
+    left: -4px;
+    letter-spacing: 0.015em;
+
+    span {
+      color: #6BCEF5;
+      font-weight: 300;
+    }
+  }
+
+  .place {
+    font-size: 21px;
+    margin: 0;
+    margin-top: 5px;
+    font-weight: 500;
+    font-family: plumb;
+    position: relative;
+    left: -2px;
+    letter-spacing: 0.01em;
+
+    &_second{
+      margin: 0;
+      line-height: 90%;
+      font-weight: 300;
+    }
+  }
+
+  .right-block {
+    max-width: 463px;
+    flex: 1;
+    padding-top: 50px;
+
+    .text {
+      font-size: 11.6px;
+      line-height: 135%;
+      letter-spacing: -0.015em;
+    }
+
+    .text:nth-child(2) {
+      margin-top: 17px;
+    }
+
+    .text:nth-child(3) {
+      margin-top: 20px;
+    }
+  }
+
+  .right-block-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .archive-button {
+      font-weight: 500;
+      text-decoration: none;
+      color: #53C7F4;
+      font-size: 10px;
+    }
+  }
+
+  .text-content {
+    margin-top: 37px;
+    text-align: justify;
+  }
+
+
+}
+
+$breakpoints: (
+  xs-phone: 300px,
+  phone: 500px,
+  xs-tablet: 800px,
+  tablet: 1260px,
+  desktop: 1720px
+);
+
+@include media (">xs-phone", "<xs-tablet") {
+  .own-content {
+    .inner-wrapper {
+      flex-direction: column;
+    }
+
+    .red-square {
+      width: 100%;
+      height: 352px;
+    }
+
+    .logo {
+      padding-left: 85px;
+    }
+
+    .title {
+      padding-left: 40px;
+
+      .title-top {
+        font-size: 12px;
+      }
+
+      .title-main {
+        font-size: 28px;
+        line-height: 85%;
+      }
+
+      .title-bottom {
+        font-size: 20px;
+      }
+    }
+
+    .left-block {
+      max-width: none;
+    }
+
+    .date,
+    .place {
+      background-color: #184B71;
+      padding-left: 40px;
+      left: 0;
+    }
+
+    .date {
+      padding-top: 30px;
+      margin-top: 35px;
+      font-size: 26px;
+    }
+
+    .place {
+      padding-bottom: 30px;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .right-block {
+      max-width: calc(100% - 80px);
+      padding-left: 40px;
+      color: #1F79BC;
+    }
+  }
+}

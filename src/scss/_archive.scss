@@ -1,0 +1,128 @@
+.archive {
+
+  &__wrapper {
+    max-width: 778px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    position: relative;
+    z-index: 3;
+  }
+
+  &__logo {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    max-width: 200px;
+    font-size: 21px;
+    z-index: 10;
+    line-height: 22px;
+    padding-top: 54px;
+    letter-spacing: -0.01em;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background: url('../img/logo.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 50px;
+      height: 63px;
+      top: -14px;
+      left: 0;
+    }
+  }
+
+
+  &__container {
+    margin-top: 81px;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__box {
+    display: flex;
+    column-gap: 75px;
+
+    :not(:last-child) {
+      margin-bottom: 60px;
+    }
+
+    :last-child {
+      padding-bottom: 60px;
+    }
+  }
+
+  &__item {
+    color: white;
+    text-decoration: none;
+    padding-left: 24px;
+    position: relative;
+    font-size: 22px;
+    transition: ease-in .2s;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 24px;
+      height: 24px;
+      background-image: url(../img/archive-logo.svg);
+      background-repeat: no-repeat;
+      left: 0;
+    }
+
+    &:hover {
+      color: #00ABE3;
+    }
+  }
+}
+
+$breakpoints: (
+  xs-phone: 300px,
+  phone: 500px,
+  xs-tablet: 800px,
+  tablet: 1260px,
+  desktop: 1720px
+);
+
+@include media (">xs-phone", "<xs-tablet") {
+
+  .archive {
+    background-color: #E30613;
+
+    &__logo {
+      max-width: 160px;
+      font-size: 15px;
+      padding-top: 50px;
+
+      &:before {
+        width: 40px;
+        height: 48px;
+        top: 0px;
+      }
+    }
+
+    &__box {
+      display: flex;
+      column-gap: 40px;
+
+      :not(:last-child) {
+        margin-bottom: 40px;
+      }
+
+      :last-child {
+        padding-bottom: 40px;
+      }
+    }
+
+    &__item {
+      font-size: 16px;
+    }
+  }
+
+}

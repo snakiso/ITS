@@ -1,0 +1,25 @@
+  .red-square {
+    content: '';
+    position: absolute;
+    width: 370px;
+    height: 360px;
+    left: 0;
+    top: 0;
+    background: #E30613;
+    z-index: 1;
+  }
+
+  $breakpoints: (
+    xs-phone: 300px,
+    phone: 500px,
+    xs-tablet: 800px,
+    tablet: 1260px,
+    desktop: 1720px
+  );
+
+  @include media (">xs-phone", "<xs-tablet") {
+    .red-square {
+      width: 100%;
+      height: 352px;
+    }
+  }

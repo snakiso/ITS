@@ -1,0 +1,31 @@
+.right-decor {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  transition: all .5s;
+
+  img {
+    height: 100%;
+  }
+}
+
+$breakpoints: (
+  xs-phone: 300px,
+  phone: 500px,
+  xs-tablet: 800px,
+  tablet: 1260px,
+  desktop: 1720px
+);
+
+@include media (">tablet", "<desktop") {
+  .right-decor {
+    right: -18%;
+  }
+}
+
+@include media (">xs-phone", "<tablet") {
+  .right-decor {
+    display: none;
+  }
+}

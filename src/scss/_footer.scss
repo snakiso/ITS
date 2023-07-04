@@ -1,0 +1,66 @@
+.footer {
+  position: relative;
+  background-image: url(../img/footer-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 160px;
+  width: 100%;
+
+  &__wrapper {
+    max-width: 778px;
+    margin: 0 auto;
+    display: flex;
+    min-height: 160px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 32px;
+    font-family: plumb;
+    letter-spacing: -0.02em;
+  }
+
+  &__subtitle {
+    font-size: 19px;
+    max-width: 202px;
+    margin-top: 29px;
+    letter-spacing: -0.01em;
+  }
+}
+
+$breakpoints: (
+  xs-phone: 300px,
+  phone: 500px,
+  xs-tablet: 800px,
+  tablet: 1260px,
+  desktop: 1720px
+);
+
+@include media (">xs-phone", "<xs-tablet") {
+
+  .footer {
+    background-position: right;
+
+    &__wrapper {
+      max-width: 778px;
+      padding: 0 20px;
+    }
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+      max-width: 120px;
+      margin-top: 29px;
+      letter-spacing: -0.01em;
+    }
+  }
+}
