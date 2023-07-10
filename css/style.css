@@ -100,33 +100,22 @@
   width: fit-content;
   text-decoration: none;
   color: black;
+  display: flex;
+  flex-direction: column;
 }
 
-.partners__box .partner-position {
+.partners__position {
   height: 30px;
   font-size: 9px;
   max-width: 140px;
   display: block;
+  flex: 1;
 }
 
-.partners .partners__box:nth-child(2) img {
-  transform: translate(2%, 10%);
-}
-
-.partners .partners__box:nth-child(4) img {
-  transform: translate(2%, 10%);
-}
-
-.partners .partners__box:nth-child(5) img {
-  transform: translate(5%, 5%);
-}
-
-.partners .partners__box:nth-child(6) img {
-  transform: translate(5%, 30%);
-}
-
-.partners .partners__box:nth-child(7) img {
-  transform: translate(0%, 35%);
+.partners__img {
+  flex: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .own-content .inner-wrapper {

@@ -1,0 +1,100 @@
+[
+  {
+    "ID": "its2023",
+    "LINK": "https://2023.itsrussiaforum.ru",
+    "NAME": "ИТС 2023",
+    "YEAR": "2023",
+    "TYPE": "Federal"
+  },
+  {
+    "ID": "its2023_tyumen",
+    "LINK": "https://tyumen.itsrussiaforum.ru",
+    "NAME": "ИТС 2023 Тюмень",
+    "YEAR": "2023",
+    "TYPE": "Regional"
+  },
+  {
+    "ID": "its2022",
+    "LINK": "https://2022.itsrussiaforum.ru",
+    "NAME": "ИТС 2022",
+    "YEAR": "2022",
+    "TYPE": "federal"
+  },
+  {
+    "ID": "its2022_pyatigorsk",
+    "LINK": "https://pyatigorsk.itsrussiaforum.ru",
+    "NAME": "ИТС 2022: Пятигорск",
+    "YEAR": "2022",
+    "TYPE": "region"
+  },
+  {
+    "ID": "its2021",
+    "LINK": "https://2021.itsrussiaforum.ru",
+    "NAME": "ИТС 2021",
+    "YEAR": "2021",
+    "TYPE": "federal"
+  },
+  {
+    "ID": "its2021_kaluga",
+    "LINK": "https://kaluga.itsrussiaforum.ru",
+    "NAME": "ИТС 2021: Калуга",
+    "YEAR": "2021",
+    "TYPE": "region"
+  },
+  {
+    "ID": "its2020",
+    "LINK": "https://2020.itsrussiaforum.ru",
+    "NAME": "ИТС 2020",
+    "YEAR": "2020",
+    "TYPE": "federal"
+  },
+  {
+    "ID": "its2019",
+    "LINK": "https://2019.itsrussiaforum.ru",
+    "NAME": "ИТС 2019",
+    "YEAR": "2019",
+    "TYPE": "federal"
+  },
+  {
+    "ID": "its2019_Ulyanovsk",
+    "LINK": "https://www.itsrussiaforum.ru/Ulyanovsk/",
+    "NAME": "ИТС 2019: Ульяновск",
+    "YEAR": "2019",
+    "TYPE": "region"
+  },
+  {
+    "ID": "its2018",
+    "LINK": "https://www.itsrussiaforum.ru/2018/ru/",
+    "NAME": "ИТС 2018",
+    "YEAR": "2018",
+    "TYPE": "federal"
+  },
+  {
+    "ID": "its2018_ryazan",
+    "LINK": "https://www.itsrussiaforum.ru/ryazan/",
+    "NAME": "ИТС 2018: Рязань",
+    "YEAR": "2018",
+    "TYPE": "region"
+  },
+  {
+    "ID": "its2017",
+    "LINK": "https://www.itsrussiaforum.ru/2017/ru/about/",
+    "NAME": "ИТС 2017",
+    "YEAR": "2017",
+    "TYPE": "federal"
+  },
+  {
+    "ID": "its2016_orel",
+    "LINK": "https://www.itsrussiaforum.ru/orel/",
+    "NAME": "ИТС 2017: Орел",
+    "YEAR": "2017",
+    "TYPE": "region"
+  },
+  {
+    "ID": "its2016",
+    "LINK": "https://www.itsrussiaforum.ru/2016/ru/",
+    "NAME": "ИТС 2016",
+    "YEAR": "2016",
+    "TYPE": "federal"
+  }
+]
